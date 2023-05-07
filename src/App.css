@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movie_card_component:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+p {
+  margin-bottom: 0.3rem;
+}
+
+.formDialog::backdrop {
+  background-color: rgba(11, 10, 10, 0.5);
+}
