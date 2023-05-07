@@ -17,8 +17,6 @@ const Home = () => {
                                 <p><b>Genre: </b>{genres.join(', ')}</p>
                                 <p><b>Language: </b>{language}</p>
                             </div>
-                            
-                            {/* <button type="button" className="btn btn-outline-secondary mx-3 mb-4">Book Tickets</button> */}
                         </div>
                     </Link>
                 )

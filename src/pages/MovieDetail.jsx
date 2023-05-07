@@ -24,12 +24,12 @@ const MovieDetail = () => {
       <div>
         {movie && 
           <div className="movieDetail container-fluid bg-dark py-3">
-            <div className="container d-flex align-items-center justify-centent-center flex-wrap gap-4 px-5">
-              <div className="position-relative w-25">
+            <div className="container d-flex align-items-center justify-content-center flex-wrap gap-4 px-5">
+              <div className="movieImage position-relative">
                 {image ? <img src={image.original} className="card-img rounded-5 opacity-75" alt={name}  /> : <img src={notAvailableImage} className="card-img rounded-5" alt={name} />}
                 <p className="position-absolute bottom-0 bg-black w-100 text-center rounded-bottom-5 text-light">{status}</p>
               </div>
-              <div className="w-50 text-light">
+              <div className="aboutMovie text-light">
                 <h2><b>{name}</b></h2>
 
                 <p><b>Genre: </b>{genres.join(', ')}</p>

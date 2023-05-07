@@ -20,7 +20,6 @@ const MovieProvider = ({ children }) => {
             const res = await axios.get(API_URL);
             const movies = await res.data;
             dispatch({ type: 'GET_MOVIES_DATA', payload: movies });
-            console.log(movies, 'movies');
         } 
         catch (error) {
             console.log('Error', error);

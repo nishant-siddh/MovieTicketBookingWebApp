@@ -17,3 +17,11 @@ p {
 .formDialog::backdrop {
   background-color: rgba(11, 10, 10, 0.5);
 }
+
+.movieImage {
+  max-width: 18rem
+}
+
+.aboutMovie {
+  max-width: 50rem;
+}
