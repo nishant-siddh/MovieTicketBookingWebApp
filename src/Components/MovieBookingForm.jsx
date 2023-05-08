@@ -12,7 +12,7 @@ const MovieBookingForm = () => {
   });
   
   useEffect(() => {
-    if(localStorage) {
+    if(localStorage.getItem('movieData')) {
       const storedData = JSON.parse(localStorage.getItem('movieData'));
       storedData.movieTitle === movie.name ? setMovieData(storedData) : setMovieData({
         movieTitle: movie.name,
