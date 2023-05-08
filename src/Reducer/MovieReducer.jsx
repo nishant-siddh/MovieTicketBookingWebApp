@@ -14,7 +14,6 @@ const MovieRedcer = (state, action) => {
 
         case 'GET_SINGLE_MOVIE_DATA':
             const tempMovieDetail = state.movies.find((movie) => (movie.show.id === Number(action.payload)));
-            // console.log(tempMovieDetail.show, 'tempMovieDetail');
 
             return {
                 ...state,
